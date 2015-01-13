@@ -134,7 +134,7 @@ time_to_timestamp({Mega, Sec, Micro}) ->
 %% @doc Create a random identifying integer, returning its string
 %%      representation in base 62.  Taken from basho/riak_core.
 unique_id_62() ->
-    Rand = crypto:sha(term_to_binary({make_ref(), os:timestamp()})),
+    Rand = crypto:hash(sha, term_to_binary({make_ref(), os:timestamp()})),
     <<I:160/integer>> = Rand,
     integer_to_list(I, 62).
 
