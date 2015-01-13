@@ -19,9 +19,7 @@ $(document).ready(function() {
       type: 'POST',
       url: '/tweets',
       contentType: 'application/json',
-      data: JSON.stringify({ tweet: {
-        avatar: "https://si0.twimg.com/profile_images/2536088319/4sl2go65was3o0km520j_reasonably_small.jpeg",
-        message: tweetMessage }}),
+      data: JSON.stringify({ tweet: { avatar: "https://pbs.twimg.com/profile_images/528338968065355777/OfCSUPTx_400x400.jpeg", message: tweetMessage }}),
       success: function(d) {
         tweetMessageField.val('');
         tweetMessageForm.toggle();
