@@ -62,9 +62,8 @@ init([]) ->
 
     %% Seed the database with some tweets.
     _ = ets:insert(tweets, [
-                {erlang:now(), [{avatar, <<"https://si0.twimg.com/profile_images/2536088319/4sl2go65was3o0km520j_reasonably_small.jpeg">>}, {message, <<"Caremad.">>}]},
-                {erlang:now(), [{avatar, <<"https://si0.twimg.com/profile_images/3778090444/e4fde2cad4b921cd8c07fcecc0ff2fff_bigger.jpeg">>}, {message, <<"Rubby is over!">>}]},
-                {erlang:now(), [{avatar, <<"https://si0.twimg.com/profile_images/2536088319/4sl2go65was3o0km520j_reasonably_small.jpeg">>}, {message, <<"You boys having a taste?">>}]}
+                {erlang:now(), [{avatar, <<"https://pbs.twimg.com/profile_images/528338968065355777/OfCSUPTx_400x400.jpeg">>}, {message, <<"Caremad.">>}]},
+                {erlang:now(), [{avatar, <<"https://pbs.twimg.com/profile_images/553593245070917632/N8BRK33L_400x400.jpeg">>}, {message, <<"You boys having a taste?">>}]}
             ]),
 
     %% Register a pg2 group.
